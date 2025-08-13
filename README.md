@@ -8,7 +8,7 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 
 ---
 
-## 🛠️ Features
+## Features
 - Fingerprint-based authentication for students.
 - Automatic attendance marking in Excel.
 - Real-time data transfer from Arduino to PC via serial communication.
@@ -17,7 +17,7 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 
 ---
 
-## ⚙️ Hardware Components
+## Hardware Components
 - **Arduino Uno** 
 - **Fingerprint Sensor Module** 
 - **Jumper Wires** & **Breadboard**
@@ -25,7 +25,7 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 
 ---
 
-## 💻 Software Requirements
+## Software Requirements
 - **Arduino IDE**
 - **Python 3.x**
 - Python Libraries:
@@ -99,11 +99,11 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 Below are images showing the **Biometric Attendance System** in action.
 
 ### Fingerprint Scanning
-![Fingerprint Scan](images/FingerprintScan.jpg)  
+![Fingerprint Scan](images/FingerprintScan.png)  
 A student places their finger on the fingerprint sensor. The sensor captures the fingerprint, processes it internally, and sends the matching student ID to the Arduino.
 
 ### Python Script Output
-![Python Output](images/PythonOutput.jpg)  
+![Python Output](images/PythonOutput.png)  
 The Python script receives the student ID via serial communication, updates the **Excel attendance sheet**, and logs the date and time automatically.
 
 ---
