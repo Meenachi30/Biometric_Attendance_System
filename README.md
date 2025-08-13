@@ -94,8 +94,37 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
    - The system returns to the **“Waiting for Fingerprint”** state and is ready for the next scan without restarting.
 
 ---
+## Working Model
 
-### 📌 Key Advantages
+Below are images showing the **Biometric Attendance System** in action.
+
+### Fingerprint Scanning
+![Fingerprint Scan](images/fingerprint_scan.jpg)  
+A student places their finger on the fingerprint sensor. The sensor captures the fingerprint, processes it internally, and sends the matching student ID to the Arduino.
+
+### Python Script Output
+![Python Output](images/python_output.jpg)  
+The Python script receives the student ID via serial communication, updates the **Excel attendance sheet**, and logs the date and time automatically.
+
+---
+## Arduino Code Files
+
+### enroll.ino
+This program is used to **enroll a new student's fingerprint** into the fingerprint sensor's memory.  
+- Captures the fingerprint image.  
+- Converts it into a digital template.  
+- Stores it with a unique **Student ID** in the sensor's database.  
+- Used **only once** for each new student during system setup.
+
+### newfinger.ino
+This program is used for **matching fingerprints during attendance marking**.  
+- Waits for a fingerprint scan.  
+- Compares the scanned template with all stored templates in the sensor.  
+- If a match is found, sends the **Student ID** to the Arduino, which then communicates it to the PC via serial port.  
+- This is the code that runs during **daily attendance operation**.
+
+
+### Key Advantages
 - **High Accuracy** – Fingerprints are unique, eliminating proxy attendance.  
 - **Fully Automated** – No manual marking required; updates happen instantly in Excel.  
 - **Fast Operation** – From scan to record, the process takes only a few seconds.  
