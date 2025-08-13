@@ -18,8 +18,8 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 ---
 
 ## ⚙️ Hardware Components
-- **Arduino Uno** (or compatible board)
-- **Fingerprint Sensor Module** (R305 or similar)
+- **Arduino Uno** 
+- **Fingerprint Sensor Module** 
 - **Jumper Wires** & **Breadboard**
 - **USB Cable** for Arduino-PC connection
 
@@ -29,9 +29,9 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 - **Arduino IDE**
 - **Python 3.x**
 - Python Libraries:
-  - `pyserial` → for serial communication
-  - `openpyxl` → for Excel file handling
-- **Excel** (or LibreOffice Calc)
+  - pyserial → for serial communication
+  - openpyxl → for Excel file handling
+- **Excel** 
 
 ---
 ## Block Diagram
