@@ -35,7 +35,7 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 
 ---
 ## Block Diagram
-![Block Diagram](images/block_diagram.png)
+![Block Diagram](images/BlockDiagram.png)
 
 **Explanation:**
 - **Fingerprint Sensor** → Captures fingerprint and sends data to Arduino.  
@@ -46,7 +46,7 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 ---
 
 ## Flowchart
-![Flowchart](images/flowchart.png)
+![Flowchart](images/Flowchart.png)
 
 **Explanation:**
 1. Start system and initialize hardware.
@@ -99,11 +99,11 @@ This system eliminates manual attendance entry, reduces errors, and ensures accu
 Below are images showing the **Biometric Attendance System** in action.
 
 ### Fingerprint Scanning
-![Fingerprint Scan](images/fingerprint_scan.jpg)  
+![Fingerprint Scan](images/FingerprintScan.jpg)  
 A student places their finger on the fingerprint sensor. The sensor captures the fingerprint, processes it internally, and sends the matching student ID to the Arduino.
 
 ### Python Script Output
-![Python Output](images/python_output.jpg)  
+![Python Output](images/PythonOutput.jpg)  
 The Python script receives the student ID via serial communication, updates the **Excel attendance sheet**, and logs the date and time automatically.
 
 ---
