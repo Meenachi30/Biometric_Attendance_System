@@ -1,6 +1,6 @@
 # Biometric Attendance System
 
-## 📌 Overview
+## Overview
 The **Biometric Attendance System** is a hardware-software project that uses a **fingerprint sensor** and **Arduino** to automate student attendance marking.  
 When a student places their finger on the sensor, their identity is verified and attendance is automatically recorded in an **Excel file** via a Python script.
 
